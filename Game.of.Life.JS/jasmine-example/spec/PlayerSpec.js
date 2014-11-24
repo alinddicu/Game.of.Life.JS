@@ -6,6 +6,11 @@ describe("Player", function() {
     player = new Player();
     song = new Song();
   });
+  
+  it("GivenNewCellWhenGetStateTheAlive", function() {
+    //var cell = new Cell();
+    expect(true).toEqual(true);
+  });
 
   it("should be able to play a Song", function() {
     player.play(song);
