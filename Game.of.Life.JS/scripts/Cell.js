@@ -1,7 +1,6 @@
-var GameOfLife = GameOfLife || {};
-
-GameOfLife.Cell = function(cellState) {
+Cell = function() {
   self = this;
 
-  self.CurrentState = CellState.Alive;
+  self.CurrentState = 1;
+  console.log("cell created");
 };
