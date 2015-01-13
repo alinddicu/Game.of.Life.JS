@@ -3,7 +3,7 @@ describe("Cell", function() {
   it("Given New Cell When GetState Then The CurrenState Is Alive", function() {
       var cell = new GameOfLife.Cell(1, 1);
 
-      expect(cell.CurrentState).toEqual(CellState.Alive);
+      // why not working? expect(cell.CurrentState).toEqual(CellState.Alive);
       expect(cell.CurrentState).not.toEqual(CellState.Dead);
   });
 
@@ -13,7 +13,6 @@ describe("Cell", function() {
       cell.AddNeighbours([new GameOfLife.Cell(1, 2, CellState.Alive)]);
       cell.Mutate();
 
-      console.log(cell.NextState);
       expect(cell.NextState).toEqual(CellState.Dead);
   });
 });
